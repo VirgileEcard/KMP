@@ -12,7 +12,7 @@ void help(){
 	<<" s : suivi de la séquence à rechercher, sinon elle sera demandée a l'éxecution"<<endl
 	<<" t : suivi du nom du fichier texte dans lequel effectuer la recherche, sinon il sera demandé à l'éxecution"<<endl
 	<<" a : pour afficher le texte dans lequel les résultats de la recherche sont colorés"<<endl
-	<<"Exemple d'utilisation : KMP.exe s ABC t test.txt a"<<endl<<endl;
+	<<"Exemple d'utilisation : KMP s ABC t test.txt a"<<endl<<endl;
 }
 
 void chevauchement (int* Tab, string seq){
