@@ -78,6 +78,9 @@ void affich(int Tab[], int l){
 
 void affichageResultat(string txt, vector<int> res, int l){
 	int i=0, k=0;
+	
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 84);
+	
 	while(k<res.size()){
 		while (i<(res.at(k)-1)){
 			cout<<txt.at(i);
