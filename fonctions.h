@@ -1,20 +1,20 @@
-#include "fonctions.cpp" //rappel : essayer de régler ça
+//#include "fonctions.cpp" //rappel : essayer de régler ça
+
 
 #ifndef __FONCTIONS_H
 #define __FONCTIONS_H
 
-
-
-void chevauchement (int* Tab, std::string seq);
-
-vector<int> recherche(int*Tab, std::string seq, std::string txt);
-
-string setTxt(string fichTxt);
-
-void affich(int* Tab, int l);
+#include <string>
+#include <vector>
+using namespace std;
 
 void help();
 
+void chevauchement (int* Tab, string seq);
+string setTxt(string fichTxt);
+vector<int> recherche(int Tab[], string seq, string txt);
+void affich(int Tab[], int l);
 void affichageResultat(string txt, vector<int> res, int l);
+
 
 #endif

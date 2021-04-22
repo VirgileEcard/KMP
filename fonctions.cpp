@@ -3,6 +3,7 @@
 #include <windows.h>
 #include <fstream>
 #include <vector>
+#include "fonctions.h"
 
 using namespace std;
 
@@ -12,7 +13,7 @@ void help(){
 	<<" s : suivi de la séquence à rechercher, sinon elle sera demandée a l'éxecution"<<endl
 	<<" t : suivi du nom du fichier texte dans lequel effectuer la recherche, sinon il sera demandé à l'éxecution"<<endl
 	<<" a : pour afficher le texte dans lequel les résultats de la recherche sont colorés"<<endl
-	<<"Exemple d'utilisation : KMP s ABC t test.txt a"<<endl<<endl;
+	<<"Exemple d'utilisation : KMP.exe s ABC t test.txt a"<<endl<<endl;
 }
 
 void chevauchement (int* Tab, string seq){
@@ -79,8 +80,7 @@ void affich(int Tab[], int l){
 void affichageResultat(string txt, vector<int> res, int l){
 	int i=0, k=0;
 	
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 84);
-	
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 86);
 	while(k<res.size()){
 		while (i<(res.at(k)-1)){
 			cout<<txt.at(i);

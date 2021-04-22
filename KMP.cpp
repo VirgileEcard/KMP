@@ -1,7 +1,7 @@
-#include "fonctions.h"
 #include <iostream>
 #include <string>
 #include <vector>
+#include "fonctions.h"
 
 using namespace std;
 
