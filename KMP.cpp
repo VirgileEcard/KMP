@@ -71,9 +71,12 @@ int main(int argc, char *argv[]) {
 	vector<int> res = recherche(Tab, seq, txt); 
 	
 	//on affiche ces occurences
-	for(int i=0; i<res.size(); i++){
-		cout<<"La sequence est presente a la position "<<res[i]<<endl;;
+	if (res.size()){
+		for(int i=0; i<res.size(); i++){
+			cout<<"La sequence est presente a la position "<<res[i]<<endl;;
+		}
 	}
+	else cout<<"Aucune occurence de "<<seq<<" n'a été trouvée dans le texte"<<endl;
 	
 	//si ça a été demandé dans les arguments, on affiche le texte avec les occurences de la séquence colorées en rouge
 	if(aff) affichageResultat(txt, res, seq.length());
