@@ -81,7 +81,8 @@ void affichageResultat(string txt, vector<int> res, int l){
 	int i=0, k=0;
 	
 	//La fonction suivante sert à modifier la couleur du texte dans la console, 86 est le code du blanc et 84 du rouge
-	//Attention : ce sont les codes des couleurs sur fond bleu (j'ai utilisé Powershell), il faut les changer pour le faire tourner sur une console à fond noir
+	//Attention : ce sont les codes des couleurs sur fond bleu (j'ai utilisé Powershell)
+	//si vous voulez le faire tourner sur une console à fond noir il faut les changer en 06 et 04
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 86);
 	while(k<res.size()){
 		while (i<(res.at(k)-1)){
